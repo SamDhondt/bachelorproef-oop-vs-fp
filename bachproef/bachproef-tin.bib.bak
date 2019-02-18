@@ -27,7 +27,7 @@
 
 @Article{Armstrong2006,
   author   = {Deborah J. Armstrong},
-  title    = {{The Quarks of Object-Oriented Development}},
+  title    = {The Quarks of Object-Oriented Development},
   journal  = {Communications of the ACM},
   year     = {2006},
   volume   = {49},
@@ -35,19 +35,6 @@
   pages    = {123--128},
   month    = feb,
   keywords = {objected oriented},
-  owner    = {sam},
-}
-
-@Article{MorganC.Benton2016,
-  author   = {Morgan C. Benton, Nicole M. Radziwill},
-  title    = {{Improving Testability and Reuse by Transitioning to Functional Programming}},
-  journal  = {Software Quality Professional},
-  year     = {2016},
-  volume   = {18},
-  number   = {3},
-  pages    = {30--38},
-  month    = jun,
-  keywords = {functional},
   owner    = {sam},
 }
 
