@@ -1,0 +1,26 @@
+% Encoding: windows-1252
+
+@Book{Flanagan2011,
+  title     = {JavaScript: The Definitive Guide},
+  publisher = {O'Reilly Media},
+  year      = {2011},
+  author    = {David Flanagan},
+  editor    = {Mike Loukides},
+}
+
+@Unpublished{Khan,
+  author = {Shehroze Khan},
+  title  = {The Problem with ES6 Classes},
+  note   = {Finra Technology},
+  url    = {https://technology.finra.org/code/problem-es6-classes.html},
+}
+
+@Book{Atencio2016,
+  title     = {Functional Programming in JavaScript},
+  publisher = {Manning},
+  year      = {2016},
+  author    = {Luis Atencio},
+  editor    = {Dean Iverson},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}

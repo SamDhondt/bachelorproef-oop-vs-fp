@@ -1,0 +1,67 @@
+%---------- Inleiding ---------------------------------------------------------
+
+\section{Introductie} % The \section*{} command stops section numbering
+\label{sec:introductie}
+
+% Hier introduceer je werk. Je hoeft hier nog niet te technisch te gaan.
+
+% Je beschrijft zeker:
+
+% \begin{itemize}
+%   \item de probleemstelling en context
+%   \item de motivatie en relevantie voor het onderzoek
+%   \item de doelstelling en onderzoeksvraag/-vragen
+% \end{itemize}
+Sinds de popularisatie van C++ en Java is OOP al ongeveer 30 jaar lang de standaard voor software ontwikkeling. FP daarentegen werd eerder gebruikt voor academische toepassingen. De methodologie kent tegenwoordig echter ook toepassingen in de industrie, bv. WhatsApp werd ontwikkeld met Erlang, een functionele programmeertaal. JavaScript lijkt nog maar sinds ECMAScript 6 (ES6) meer op een OOP taal en kan ook op een FP manier gebruikt worden via third-party libraries. Er zijn genoeg voorbeelden over hoe een bepaald stukje code kan geschreven worden op beide manieren maar er is nog geen vergelijking van een volledige OOP en FP applicatie. Dit kan een duidelijker beeld scheppen van de discussie in plaats van hoe mooi of compact een bepaalde code snippet is. Het doel van dit onderzoek is een webapplicatie te maken in zowel een OOP stijl als een FP stijl en deze te vergelijken om zo de sterktes en zwaktes van beide methodologieën te onderzoeken.
+
+%---------- Stand van zaken ---------------------------------------------------
+
+\section{State-of-the-art}
+\label{sec:state-of-the-art}
+
+% Hier beschrijf je de \emph{state-of-the-art} rondom je gekozen onderzoeksdomein. Dit kan bijvoorbeeld een literatuurstudie zijn. Je mag de titel van deze sectie ook aanpassen (literatuurstudie, stand van zaken, enz.). Zijn er al gelijkaardige onderzoeken gevoerd? Wat concluderen ze? Wat is het verschil met jouw onderzoek? Wat is de relevantie met jouw onderzoek?
+
+% Verwijs bij elke introductie van een term of bewering over het domein naar de vakliteratuur, bijvoorbeeld~\autocite{Doll1954}! Denk zeker goed na welke werken je refereert en waarom.
+
+% Voor literatuurverwijzingen zijn er twee belangrijke commando's:
+% \autocite{KEY} => (Auteur, jaartal) Gebruik dit als de naam van de auteur
+%   geen onderdeel is van de zin.
+% \textcite{KEY} => Auteur (jaartal)  Gebruik dit als de auteursnaam wel een
+%   functie heeft in de zin (bv. ``Uit onderzoek door Doll & Hill (1954) bleek
+%   ...'')
+
+% Je mag gerust gebruik maken van subsecties in dit onderdeel.
+JavaScript is een flexibele taal en kan gebruikt worden voor zowel een OOP of FP aanpak \autocite{Flanagan2011}. 
+
+\subsection*{Object Oriented}
+Alles in JavaScript is een object en sinds ES6 lijkt JavaScript al meer op een OOP taal maar dat is het nog steeds niet volledig. ES6 maakt de overstap van OOP talen zoals C++ en Java naar JavaScript makkelijker maar men kan nog steeds niet dezelfde soort code schrijven zoals men in die andere talen schrijft.
+\autocite{Khan}. 
+
+\subsection*{Functioneel}
+De taal kan ook gebruikt worden met een FP aanpak. JavaScript heeft ingebouwde functionaliteit die dat ondersteunt zoals de map, filter en reduce functies maar om echt de FP methodologie toe te passen is er hulp nodig van libraries zoals Lodash, Ramda en RxJS, daar het geen 'pure' FP-taal is \autocite{Atencio2016}.
+
+
+%---------- Methodologie ------------------------------------------------------
+\section{Methodologie}
+\label{sec:methodologie}
+
+% Hier beschrijf je hoe je van plan bent het onderzoek te voeren. Welke onderzoekstechniek ga je toepassen om elk van je onderzoeksvragen te beantwoorden? Gebruik je hiervoor experimenten, vragenlijsten, simulaties? Je beschrijft ook al welke tools je denkt hiervoor te gebruiken of te ontwikkelen.
+Het onderzoek omvat de ontwikkeling van eenzelfde applicatie in zowel een OOP stijl als een FP stijl. De applicaties zullen niet puur in deze stijlen geschreven zijn, dit is immers geen realistisch scenario, maar er zal telkens een overheersende methodologie aanwezig zijn in elke applicatie. Hierna volgt een analyse van beide applicaties om de sterktes en zwaktes van beide te visualiseren. Herbruikhaarheid van de code wordt gemeten met behulp van 'reusability metrics' \autocite{Poulin1996}. Gebruikte tools zullen Visual Code zijn met Github integratie voor het ontwikkelen van de webapplicatie en Google Chrome voor het zowel het draaien van de applicatie als voor performantiemetingen dankzij de developer tools.
+
+
+%---------- Verwachte resultaten ----------------------------------------------
+\section{Verwachte resultaten}
+\label{sec:verwachte_resultaten}
+
+% Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
+De applicaties zullen geanalyseerd worden op basis van complexiteit, leesbaarheid en hoeveelheid van de code alsook performantie, uitbreidbaarheid, testbaarheid, totale bestandsgrootte en programmeertijd. Verwacht is dat FP hoeveelheid van code en daarmee bestandsgrootte laag zal houden ten koste van complexiteit en leesbaarheid. Van een OOP aanpak daarentegen wordt verwacht dat er meer code nodig zal zijn om dezelfde applicatie te bereiken maar daardoor wel wint aan leesbaarheid en minder complexiteit.  
+
+%---------- Verwachte conclusies ----------------------------------------------
+\section{Verwachte conclusies}
+\label{sec:verwachte_conclusies}
+
+% Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+
+Uit het onderzoek wordt verwacht dat FP een voordeel heeft op het vlak van herbruikbaarheid en uitbreidbaarheid dankzij de abstracte karakteristieken van deze methodologie. Daarentegen wordt er voor OOP verwacht dat geconcludeerd zal worden dat OOP minder complex en leesbaarder is, OOP probeert immers de echte wereld te repliceren om zo een duidelijk geheel te kunnen scheppen van de applicatie waarvan de werking intuïtief is. Een andere verwachte conclusie is dat performantie in deze keuze geen rol of een kleine rol zal spelen en dat het eerder gaat om de andere aspecten waarop de applicaties zullen worden vergeleken.
+De juiste keuze of oplossing hangt echter af van het probleem, daarom probeert deze studie geen 'winnaar' aan te duiden maar eerder een referentie aan te bieden die bij de opstart van een webapplicatie project in JavaScript kan helpen bij het kiezen van de juiste methodologie. Er zal altijd een subjectiviteit gebonden zijn aan de keuze tussen beide methodologieën, maar dit onderzoek kan argumenten bieden voor een webontwikkelingsteam om voor OOP of FP te kiezen.
+
