@@ -7,11 +7,29 @@
 
 % Pas na deze inleidende paragraaf komt de eerste sectiehoofding.
 
-Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet er nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
+% Dit hoofdstuk bevat je literatuurstudie. De inhoud gaat verder op de inleiding, maar zal het onderwerp van de bachelorproef *diepgaand* uitspitten. De bedoeling is dat de lezer na lezing van dit hoofdstuk helemaal op de hoogte is van de huidige stand van zaken (state-of-the-art) in het onderzoeksdomein. Iemand die niet vertrouwd is met het onderwerp, weet er nu voldoende om de rest van het verhaal te kunnen volgen, zonder dat die er nog andere informatie moet over opzoeken \autocite{Pollefliet2011}.
 
-Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\TeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
-Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
+% Je verwijst bij elke bewering die je doet, vakterm die je introduceert, enz. naar je bronnen. In \LaTeX{} kan dat met het commando \texttt{$\backslash${textcite\{\}}} of \texttt{$\backslash${autocite\{\}}}. Als argument van het commando geef je de ``sleutel'' van een ``record'' in een bibliografische databank in het Bib\TeX{}-formaat (een tekstbestand). Als je expliciet naar de auteur verwijst in de zin, gebruik je \texttt{$\backslash${}textcite\{\}}.
+% Soms wil je de auteur niet expliciet vernoemen, dan gebruik je \texttt{$\backslash${}autocite\{\}}. In de volgende paragraaf een voorbeeld van elk.
 
-\textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
+% \textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
-\lipsum[7-20]
+Programmeerparadigma's omschrijven een manier van programmeren. Dit kan de syntax, algemene stijl of de manier waarop een programma wordt uitgevoerd omvatten. Het al dan niet ondersteunen van één of meerdere van deze paradigma's is een manier om de vele programmeertalen op te delen. Eén van de meest simpele paradigma's is imperatief programmeren. Code gebaseerd op dit paradigma voert instructie per instructie uit om zo tot een uiteindelijk resultaat te komen. Dit leidde echter tot zogenaamde \textit{spaghetti code}, code die ongestructureerd is en daardoor moeilijk om te onderhouden. Object-Oriented (Object-Geörienteerd) programmeren probeerde hier een eind aan te maken door de code te structureren in objecten. Een poging die succesvol blijkt te zijn want OOP groeide uit tot het meest gebruikte programmeerparadigma. 
+
+\section{Object-Oriented programmeren}
+\subsection{Definitie}
+OOP is een manier van programmeren die in simpele zin werkt met objecten die onderling berichten versturen naar elkaar. Een object heeft *state* (data in variabelen) en gedrag (methoden). Objecten communiceren met elkaar door methodes aan te roepen van andere objecten. Het aanmaken van objecten gebeurt d.m.v. klassen. Klassen definiëren objecten die dezelfde *state* en hetzelfde gedrag hebben en vormen een blauwdruk waarmee deze objecten kunnen aangemaakt worden tijdens de uitvoering van een programma. Een voorbeeld in *TODO: KIES EEN TAAL* van een klasse: 
+
+% TODO: voorbeeldcode van een klasse %
+
+Een constructor maakt het mogelijk om hiervan een object te maken zoals te zien in volgende voorbeeld:
+
+% TODO: voorbeeldcode van het aanmaken van een object %
+
+% TODO: taal waar eerst OO in gebruikt werd %
+
+\subsection{Design Patterns}
+Design patterns zijn simpel gesteld kant-en-klare oplossingen voor specifieke problemen. In applicatieontwikkeling is het een best practice om te vermijden om het wiel te heruitvinden, daarom werden design patterns opgesteld om zo een referentie te bieden voor andere ontwikkelaars om een bepaalde probleem op te lossen. Want net zoals het herhalen van code worden ook problemen vaak herhaald. OOP is niet perfect maar door de correcte implementatie van design patterns kan een ontwikkelaar het maximum halen uit de mogelijkheden van OOP zonder zichzelf in de voet te schieten door terug spaghetticode te schrijven zoals het geval is bij imperatief programmeren.
+
+%  TODO: voorbeeld van een design pattern % 
+
