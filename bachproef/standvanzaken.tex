@@ -14,22 +14,53 @@
 
 % \textcite{Knuth1998} schreef een van de standaardwerken over sorteer- en zoekalgoritmen. Experten zijn het erover eens dat cloud computing een interessante opportuniteit vormen, zowel voor gebruikers als voor dienstverleners op vlak van informatietechnologie~\autocite{Creeger2009}.
 
-Programmeerparadigma's omschrijven een manier van programmeren. Dit kan de syntax, algemene stijl of de manier waarop een programma wordt uitgevoerd omvatten. Het al dan niet ondersteunen van één of meerdere van deze paradigma's is een manier om de vele programmeertalen op te delen. Eén van de meest simpele paradigma's is imperatief programmeren. Code gebaseerd op dit paradigma voert instructie per instructie uit om zo tot een uiteindelijk resultaat te komen. Dit leidde echter tot zogenaamde \textit{spaghetti code}, code die ongestructureerd is en daardoor moeilijk om te onderhouden. Object-Oriented (Object-Geörienteerd) programmeren probeerde hier een eind aan te maken door de code te structureren in objecten. Een poging die succesvol blijkt te zijn want OOP groeide uit tot het meest gebruikte programmeerparadigma. 
+Programmeerparadigma's omschrijven een manier van programmeren. Dit kan de syntax, algemene stijl of de manier waarop een programma wordt uitgevoerd omvatten*BRON*. Het al dan niet ondersteunen van één of meerdere van deze paradigma's is een manier om de vele programmeertalen op te delen. Eén van de meest simpele paradigma's is imperatief programmeren. Code gebaseerd op dit paradigma voert instructie per instructie uit om zo tot een uiteindelijk resultaat te komen. Dit leidde echter tot zogenaamde \textit{spaghetti code}*BRON*, code die ongestructureerd is en daardoor moeilijk om te onderhouden. Object-Oriented (Object-Geörienteerd) programmeren probeerde hier een eind aan te maken door de code te structureren in objecten. Een poging die succesvol blijkt te zijn want OOP groeide uit tot het meest gebruikte programmeerparadigma*BRON*. 
 
 \section{Object-Oriented programmeren}
-\subsection{Definitie}
-OOP is een manier van programmeren die in simpele zin werkt met objecten die onderling berichten versturen naar elkaar. Een object heeft *state* (data in variabelen) en gedrag (methoden). Objecten communiceren met elkaar door methodes aan te roepen van andere objecten. Het aanmaken van objecten gebeurt d.m.v. klassen. Klassen definiëren objecten die dezelfde *state* en hetzelfde gedrag hebben en vormen een blauwdruk waarmee deze objecten kunnen aangemaakt worden tijdens de uitvoering van een programma. Een voorbeeld in *TODO: KIES EEN TAAL* van een klasse: 
+\subsection{Achtergrond}
+OOP is een manier van programmeren die in simpele zin werkt met objecten die onderling berichten versturen naar elkaar*BRON*. Een object heeft \textit{state} (data in variabelen) en gedrag (methoden). Objecten communiceren met elkaar door methodes aan te roepen van andere objecten. Het aanmaken van objecten gebeurt d.m.v. klassen*BRON*. Klassen definiëren objecten die dezelfde \textit{state} en hetzelfde gedrag hebben en vormen een blauwdruk waarmee deze objecten kunnen aangemaakt worden tijdens de uitvoering van een programma. Een voorbeeld in *TODO: KIES EEN TAAL* van een klasse: 
 
 % TODO: voorbeeldcode van een klasse %
 
-Een constructor maakt het mogelijk om hiervan een object te maken zoals te zien in volgende voorbeeld:
+Een constructor*BRON* maakt het mogelijk om hiervan een object te maken zoals te zien in volgende voorbeeld:
 
 % TODO: voorbeeldcode van het aanmaken van een object %
 
-% TODO: taal waar eerst OO in gebruikt werd %
+\subsection{Concepten}
+De concepten of soms ook bekend onder de naam 'pilaren' van OOP laten toe om code zodanig te structureren om het gebruik en onderhoud ervan te vergemakkelijken. Het toepassen van deze concepten wil nog niet zeggen dat de geschreven code goed is, correct gebruik van OOP hangt nog steeds af van het juist toepassen van de verschillende concepten aan de gepaste situaties. De vier bekendste concepten zijn Overerving, Abstractie, Polymorfisme en Encapsulatie*BRON*.
+
+\begin{description}
+   \item[Overerving] Ook wel bekend als specialisatie. Klassen kunnen overerven van andere klassen om zo uit te breiden op diens \textit{state} en gedrag. Zo kan bv. een klasse Student overerven van een klasse Persoon en uitbreiden op deze klasse zoals getoond in volgend voorbeeld: 
+    % TODO: voorbeeldcode van overerving %
+    Overerving laat hergebruik van klassen toe en kan een ontwikkelaar klassen naar wensen afstellen door deze uit te breiden. Overerving is echter een concept van OOP dat tot heel wat controverse leidde*BRON*. % TODO: meer uitleg over controverse %
+    \item[Abstractie] Abstracties maken van klassen simplificeren deze door ze te versimpelen d.m.v. het verwijderen van details zoals zodat een gebruiker een simpele weergave krijgt van een object zonder al de specifieke implementaties. Wanneer een object een methode aanroept op een ander wil deze vaak enkel een resultaat, voor het aanroepende object maakt het niet uit welke soort object het ander is, wat het allemaal kan of wat de implementatie van de aangeroepen methode is. % TODO: voorbeeldcode van abstractie %
+    \item[Polymorfisme] Dit concept stelt objecten in staat om te reageren op eenzelfde boodschap met eigen gedrag. Zo kan een object een methode aanroepen op een object en een resultaat terugkrijgen dat verschillend is als het dezelfde methode zou aanroepen op een ander object. Een algemene basisklasse declareert zo'n methode en andere klassen kunnen of soms moeten deze implementeren bij het uitbreiden van deze klasse. Dit duidt men vaak aan via een \textit{override} sleutelwoord. Een object die een andere object van die basisklasse bevat roept dan de methode aan en de runtime*BRON**UITLEG IN FOOTER?* checkt welke implementatie er van toepassing is door te kijken naar het runtime type van het object, wat het type van één van de afgeleide objecten van de basisklasse zal zijn. Een illustratie volgt in volgende voorbeeld: % TODO: voorbeeldcode van polymorfisme %
+    \item[Encapsulatie] Encapsulatie breidt verder uit op abstractie door het afschermen van details die niet zichtbaar hoeven te zijn. Dit gebeurt a.d.h.v. \textit{access modifiers}*BRON*. In Java zijn dit private, protected, package (default) en public. Een goede regel is om enkel zichtbaar te maken wat echt zichtbaar hoeft te zijn (dit zijn dan vaak methodes) en de onnodige details afschermen.
+\end{description}
 
 \subsection{Design Patterns}
 Design patterns zijn simpel gesteld kant-en-klare oplossingen voor specifieke problemen. In applicatieontwikkeling is het een best practice om te vermijden om het wiel te heruitvinden, daarom werden design patterns opgesteld om zo een referentie te bieden voor andere ontwikkelaars om een bepaalde probleem op te lossen. Want net zoals het herhalen van code worden ook problemen vaak herhaald. OOP is niet perfect maar door de correcte implementatie van design patterns kan een ontwikkelaar het maximum halen uit de mogelijkheden van OOP zonder zichzelf in de voet te schieten door terug spaghetticode te schrijven zoals het geval is bij imperatief programmeren.
 
 %  TODO: voorbeeld van een design pattern % 
+
+\subsection{SOLID}
+SOLID is een acronym dat de 5 principes van OOP (niet te verwarren met de eerder vermelde concepten/pillaren) omschrijft die werden opgesteld door Robert C. Martin *BRON*.  Het juist volgen van deze principes zorgt ook voor makkelijk onderhoudbare en uitbreidbare code. De principes zijn als volgt:
+\begin{description}
+  \item [Single responsibility principle] Elke klasse heeft maar één verantwoordelijkheid in een applicatie. Zo wordt het makkelijker om veranderingen aan te brengen in de code zonder neveneffecten. Het vermijd ook het maken van een \textit{god object}*BRON*, een object dat te veel doet en/of te veel weet.
+  \item [Open-closed principle] Code moet open zijn voor uitbreidingen maar afgesloten voor wijzigingen. M.a.w. het moet mogelijk zijn om op een klasse, functie, etc. uit te breiden zonder daarvoor de originele code te moeten wijzigen. 
+  \item [Liskov substitution principle] Waar men een bepaalde klasse verwacht daar moet een subklasse voor kunnen instaan. Een subklasse kan op een methode van een superklasse uitbreiden maar kan deze niet inperken. Zo moet de input (aantal en type van de parameters) en output (return type) hetzelfde blijven.
+  \item [Interface segregation principle] Het correct volgen van dit principe vermijd het maken van te grote interfaces*UITLEG IN FOOTER?* met methodes die dan een onnodige implementatie vereisen wanneer klasse slechts enkele methodes van deze interface nodig hebben.
+  \item [Dependency inversion principle] Abstractie staat centraal bij dit principe. Een abstractie ontkoppelt \textit{dependencies} van elkaar en zorgt ervoor dat die enkel afhankelijk zijn van de abstractie, dus niet meer van de details van elkaar.
+\end{description}
+
+Correct gebruik van OOP kan leiden tot herbruikbare en makkelijk uitbreidbare code en dit voordeel heeft het laten uitgroeien tot het meest gebruikte programeerparadigma. Klassen zijn vaak afgeleid van objecten in de echte wereld en dit maakt het geheel makkelijk verstaanbaar en leesbaar. Aan OOP zijn er echter ook nadelen verbonden. Zo is er typisch veel code nodig bij een OOP aanpak en is die ook minder performant door de verschillende objecten die bij elkaar methodes aanroepen. Een ander nadeel is dat het zich niet zo goed leent bij parallelle processen doordat data in allerlei objecten verscholen zit en dus de \textit{state} van het programma continu door andere objecten kan veranderd worden. OOP is dus geen \textit{all-round} paradigma en ondanks zijn populariteit de voorbije decennia blijft het toch niet het enigste paradigma waarin ontwikkelaars programmeren. Functioneel programmeren is een paradigma die aan populariteit blijft winnen en die geen last heeft van de nadelen van OOP (maar wel andere nadelen met zich mee kan brengen).
+
+\section{Functioneel programmeren}
+\subsection{Achtergrond}
+
+ACHTERGROND
+
+
+
+
 
