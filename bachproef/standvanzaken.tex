@@ -18,33 +18,24 @@ Programmeerparadigma's omschrijven een manier van programmeren. Dit kan de synta
 
 \section{Object-Oriented programmeren}
 \subsection{Achtergrond}
-OOP is een manier van programmeren die in simpele zin werkt met objecten die onderling berichten versturen naar elkaar*BRON*. Een object heeft \textit{state} (data in variabelen) en gedrag (methoden). Objecten communiceren met elkaar door methodes aan te roepen van andere objecten. Het aanmaken van objecten gebeurt d.m.v. klassen*BRON*. Klassen definiëren objecten die dezelfde \textit{state} en hetzelfde gedrag hebben en vormen een blauwdruk waarmee deze objecten kunnen aangemaakt worden tijdens de uitvoering van een programma. Een voorbeeld in *TODO: KIES EEN TAAL* van een klasse: 
-
-% TODO: voorbeeldcode van een klasse %
-
-Een constructor*BRON* maakt het mogelijk om hiervan een object te maken zoals te zien in volgende voorbeeld:
-
-% TODO: voorbeeldcode van het aanmaken van een object %
+OOP is een manier van programmeren die in simpele zin werkt met objecten die onderling berichten versturen naar elkaar*BRON*. Een object heeft \textit{state} (data in variabelen) en gedrag (methoden). Objecten communiceren met elkaar door methodes aan te roepen van andere objecten. Het aanmaken van objecten gebeurt d.m.v. klassen*BRON*. Klassen definiëren objecten die dezelfde \textit{state} en hetzelfde gedrag hebben en vormen een blauwdruk waarmee deze objecten kunnen aangemaakt worden tijdens de uitvoering van een programma. Een constructor*BRON* maakt het mogelijk om hiervan een object te maken.
 
 \subsection{Concepten}
 De concepten of soms ook bekend onder de naam 'pilaren' van OOP laten toe om code zodanig te structureren om het gebruik en onderhoud ervan te vergemakkelijken. Het toepassen van deze concepten wil nog niet zeggen dat de geschreven code goed is, correct gebruik van OOP hangt nog steeds af van het juist toepassen van de verschillende concepten aan de gepaste situaties. De vier bekendste concepten zijn Overerving, Abstractie, Polymorfisme en Encapsulatie*BRON*.
 
 \begin{description}
-   \item[Overerving] Ook wel bekend als specialisatie. Klassen kunnen overerven van andere klassen om zo uit te breiden op diens \textit{state} en gedrag. Zo kan bv. een klasse Student overerven van een klasse Persoon en uitbreiden op deze klasse zoals getoond in volgend voorbeeld: 
-    % TODO: voorbeeldcode van overerving %
-    Overerving laat hergebruik van klassen toe en kan een ontwikkelaar klassen naar wensen afstellen door deze uit te breiden. Overerving is echter een concept van OOP dat tot heel wat controverse leidde*BRON*. % TODO: meer uitleg over controverse %
-    \item[Abstractie] Abstracties maken van klassen simplificeren deze door ze te versimpelen d.m.v. het verwijderen van details zoals zodat een gebruiker een simpele weergave krijgt van een object zonder al de specifieke implementaties. Wanneer een object een methode aanroept op een ander wil deze vaak enkel een resultaat, voor het aanroepende object maakt het niet uit welke soort object het ander is, wat het allemaal kan of wat de implementatie van de aangeroepen methode is. % TODO: voorbeeldcode van abstractie %
-    \item[Polymorfisme] Dit concept stelt objecten in staat om te reageren op eenzelfde boodschap met eigen gedrag. Zo kan een object een methode aanroepen op een object en een resultaat terugkrijgen dat verschillend is als het dezelfde methode zou aanroepen op een ander object. Een algemene basisklasse declareert zo'n methode en andere klassen kunnen of soms moeten deze implementeren bij het uitbreiden van deze klasse. Dit duidt men vaak aan via een \textit{override} sleutelwoord. Een object die een andere object van die basisklasse bevat roept dan de methode aan en de runtime*BRON**UITLEG IN FOOTER?* checkt welke implementatie er van toepassing is door te kijken naar het runtime type van het object, wat het type van één van de afgeleide objecten van de basisklasse zal zijn. Een illustratie volgt in volgende voorbeeld: % TODO: voorbeeldcode van polymorfisme %
+   \item[Overerving] Ook wel bekend als specialisatie. Klassen kunnen overerven van andere klassen om zo uit te breiden op diens \textit{state} en gedrag. Zo kan bv. een klasse Student overerven van een klasse Persoon en uitbreiden op deze klasse. 
+    Overerving laat hergebruik van klassen toe en kan een ontwikkelaar klassen naar wensen afstellen door deze uit te breiden. 
+    \item[Abstractie] Abstracties maken van klassen simplificeren deze door ze te versimpelen d.m.v. het verwijderen van details zoals zodat een gebruiker een simpele weergave krijgt van een object zonder al de specifieke implementaties. Wanneer een object een methode aanroept op een ander wil deze vaak enkel een resultaat, voor het aanroepende object maakt het niet uit welke soort object het ander is, wat het allemaal kan of wat de implementatie van de aangeroepen methode is.
+    \item[Polymorfisme] Dit concept stelt objecten in staat om te reageren op eenzelfde boodschap met eigen gedrag. Zo kan een object een methode aanroepen op een object en een resultaat terugkrijgen dat verschillend is als het dezelfde methode zou aanroepen op een ander object. Een algemene basisklasse declareert zo'n methode en andere klassen kunnen of soms moeten deze implementeren bij het uitbreiden van deze klasse. Dit duidt men vaak aan via een \textit{override} sleutelwoord. Een object die een andere object van die basisklasse bevat roept dan de methode aan en de runtime*BRON**UITLEG IN FOOTER?* checkt welke implementatie er van toepassing is door te kijken naar het runtime type van het object, wat het type van één van de afgeleide objecten van de basisklasse zal zijn.
     \item[Encapsulatie] Encapsulatie breidt verder uit op abstractie door het afschermen van details die niet zichtbaar hoeven te zijn. Dit gebeurt a.d.h.v. \textit{access modifiers}*BRON*. In Java zijn dit private, protected, package (default) en public. Een goede regel is om enkel zichtbaar te maken wat echt zichtbaar hoeft te zijn (dit zijn dan vaak methodes) en de onnodige details afschermen.
 \end{description}
 
 \subsection{Design Patterns}
 Design patterns zijn simpel gesteld kant-en-klare oplossingen voor specifieke problemen. In applicatieontwikkeling is het een best practice om te vermijden om het wiel te heruitvinden, daarom werden design patterns opgesteld om zo een referentie te bieden voor andere ontwikkelaars om een bepaalde probleem op te lossen. Want net zoals het herhalen van code worden ook problemen vaak herhaald. OOP is niet perfect maar door de correcte implementatie van design patterns kan een ontwikkelaar het maximum halen uit de mogelijkheden van OOP zonder zichzelf in de voet te schieten door terug spaghetticode te schrijven zoals het geval is bij imperatief programmeren.
 
-%  TODO: voorbeeld van een design pattern % 
-
 \subsection{SOLID}
-SOLID is een acronym dat de 5 principes van OOP (niet te verwarren met de eerder vermelde concepten/pillaren) omschrijft die werden opgesteld door Robert C. Martin *BRON*.  Het juist volgen van deze principes zorgt ook voor makkelijk onderhoudbare en uitbreidbare code. De principes zijn als volgt:
+SOLID is een acronym dat de 5 principes van OOP (niet te verwarren met de eerder vermelde concepten/pillaren) omschrijft die werden opgesteld door Robert C. Martin \textcite{Buysse2017-2018}.  Het juist volgen van deze principes zorgt ook voor makkelijk onderhoudbare en uitbreidbare code. De principes zijn als volgt:
 \begin{description}
   \item [Single responsibility principle] Elke klasse heeft maar één verantwoordelijkheid in een applicatie. Zo wordt het makkelijker om veranderingen aan te brengen in de code zonder neveneffecten. Het vermijd ook het maken van een \textit{god object}*BRON*, een object dat te veel doet en/of te veel weet.
   \item [Open-closed principle] Code moet open zijn voor uitbreidingen maar afgesloten voor wijzigingen. M.a.w. het moet mogelijk zijn om op een klasse, functie, etc. uit te breiden zonder daarvoor de originele code te moeten wijzigen. 
@@ -57,10 +48,26 @@ Correct gebruik van OOP kan leiden tot herbruikbare en makkelijk uitbreidbare co
 
 \section{Functioneel programmeren}
 \subsection{Achtergrond}
+Zoals de naam al doet vermoeden staan functies centraal bij FP. Functies nemen data als input geven daarop een output terug zonder de originele data te veranderen. \textit{Immutability}*BRON* is dan ook zeer belangrijk binnen dit paradigma. Alhoewel functioneel programmeren nog maar redelijk recent aan populariteit wint, is het concept toch al reeds bekend sinds de introductie van Lambdacalculus door Alonzo Church in de jaren 30*BRON*. Lambdacalculus maakt gebruikt van zogenaamde pure functies en vormt de basis voor het functioneel programmeren paradigma. Er bestaan talen specifiek gericht op die paradigma zoals Lisp, Scala, Haskell en Erlang. Ondersteuning voor FP kwam er ook talen voor zoals Java (lambda's en streams) en C\# (LINQ). Het enige wat een programmeertaal moet ondersteunen om aan FP te kunnen doen zijn zogenaamde \textit{higher-order functions} net zoals het geval is bij lambda calculus *BRON*. Hierdoor kan men ook gebruik maken van currying. Deze concepten van FP komen nu aan bod in volgende secties.
 
-ACHTERGROND
+\subsection{Lambdacalculus}
+Daar dit geen wiskundige paper is zal er niet diepgaand worden ingegaan op de Lambdacalculus maar zal er slechts een korte uitleg volgen om de basis achter FP te illustreren. Op zich is Lambdacalculus eigenlijk een programmeertaal, al is die \textit{low-level}. Lambdacalculus werkt met functies die een input krijgen en een output geven. De functies hebben een \textit{black box} structuur, het is dus niet geweten hoe die functies precies werken, enkel hun input en output is gekend. Dit leidt tot al één concept binnen FP; de focus op programmeren \textbf{wat} je wil bereiken en niet \textbf{hoe}. De input en output van functies binnen Lambdacalculus kunnen op hun beurt ook functies zijn. Variabelen binnen Lambdacalculus zijn constant, ze veranderen dus niet.
 
+\subsection{Functies in Functioneel Programmeren}
+De functies binnen FP moeten puur zijn, d.w.z. ze krijgen een input en geven voor één input één en dezelfde output. Deze pure functies hebben dus geen neveneffecten, ze beïnvloeden geen globale variabelen of andere soort van \textit{state}. Het testen van deze functies is dan ook zeer makkelijk aangezien ze bij dezelfde parameters telkens dezelfde output geven, zonder uitzondering.
+Verder zijn deze functies ook zogenaamde \textit{higher-order} functies. Ze kunnen andere functies als argument nemen en/of een functie retourneren.
+Hiervoor is het vooral nodig dat de programmeertaal waarin een ontwikkelaar werkt \textit{first-class} functies ondersteunt, d.w.z. dat de taal functies behandelt net zoals alle andere types van data m.a.w. ze kunnen naast voorgenoemde toepassingen ook aangemaakt en opgeslagen worden in variabelen.
 
+\subsection{Currying}
+Deze techniek is vernoemd naar Haskell Curry (wiens voornaam ook de naam is van de functionele programmeertaal). Het omvat een techniek waarmee men een functie die meerdere parameters heeft opsplitst in een sequentie van functies met telkens één parameter. Zo ontstaan er verschillende deelfuncties die kunnen opgeslagen worden in variabelen. Op die manier is het ook makkelijk om deze functies te hergebruiken in andere delen van de applicatie. Currying werkt ook hand in hand met \textit{dependency injection}*BRON*, wanneer je parameters van elders worden doorgegeven.
 
+\subsection{Immutable}
+Nog een centraal concept binnen FP is \textit{immutable} data. D.w.z. data die niet meer ongewijzigd blijft. Dit werkt hand-in-hand met het concept van pure functies, aangezien deze geen neveneffecten hebben en enkel output retourneren gebaseerd op hun input. Werken met \textit{immutable} data is vooral ideaal voor applicaties die gebruik maken van \textit{multithreading} en parallelle processen. Aangezien deze data niet verandert kunnen er zich ook geen problemen voordoen bij het gelijktijdige schrijfoperaties.
 
+\subsection{Map en Reduce}
+Binnen FP hebben loops geen plaats, aangezien dit meestal aanleiding geeft tot het muteren van \textit{state}. Naast het gebruik van recursie bestaan er binnen FP de functies \textit{map} en \textit{reduce}, twee functies die gebruikt kunnen worden om te werken met collecties. \textit{Map} verwacht een functie als parameter die op elk element zal uitgevoerd worden. \textit{Reduce} verwacht een functie en een initiële waarde en zal alle via die functie en waarde alle elementen verwerken tot één element. Deze twee functies lopen parallel met de gedachtegang van FP, de ontwikkelaar zal vooral specificeren wat hij wil doen maar niet hoe, de specifieke implementatie van deze functies speelt geen rol binnen de scope van de applicatie die de ontwikkelaar wil bouwen. Deze functies vormen de basis van andere vaak voorkomende functies om met collecties te werken zoals \textit{find}, \textit{filter}, \textit{any} e.a.
 
+Functioneel programmeren wint alsmaar meer aan populariteit en dat is te zien aan de verschillende talen die dit (al dan niet gedeeltelijk) ondersteunen. Eén taal waarbij zowel OOP en FP mogelijk zijn op verschillende gradaties is JavaScript, dé programmeertaal voor webontwikkeling. Dankzij zijn vele frameworks en consistente verbeteringen is het dan ook één van de populairste talen op dit moment.
+
+\section{JavaScript}
+\subsection{Achtergrond}
