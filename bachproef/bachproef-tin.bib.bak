@@ -1,33 +1,8 @@
 % Encoding: UTF-8
-@book{Knuth1998,
- author = {Knuth, Donald E.},
- title = {The art of computer programming,  volume 3: (2nd ed.) sorting and searching},
- year = {1998},
- publisher = {Addison Wesley Longman Publishing Co., Inc.},
- address = {Redwood City, CA, USA}
-}
-
-@book{Pollefliet2011,
-  author = {Pollefliet, Leen},
-  title = {Schrijven van verslag tot eindwerk: do's en don'ts},
-  year = {2011},
-  publisher = {Academia Press},
-  address = {Gent}
-}
-
-@article{Creeger2009,
-  author = {Creeger, Mache},
-  journal = {Communications of the ACM},
-  number = {8},
-  pages = {50--56},
-  title = {{CTO Roundtable: Cloud Computing}},
-  volume = {52},
-  year = {2009}
-}
 
 @Article{Armstrong2006,
-  author   = {Deborah J. Armstrong},
-  title    = {The Quarks of Object-Oriented Development},
+  author   = {Armstrong, Deborah J.},
+  title    = {{The Quarks of Object-Oriented Development}},
   journal  = {Communications of the ACM},
   year     = {2006},
   volume   = {49},
@@ -36,6 +11,167 @@
   month    = feb,
   keywords = {objected oriented},
   owner    = {sam},
+}
+
+@Article{Benton2016,
+  author   = {Benton, Morgan C. and Radziwill, Nicole M.},
+  title    = {{Improving Testability and Reuse by Transitioning to Functional Programming}},
+  journal  = {Software Quality Professional},
+  year     = {2016},
+  volume   = {18},
+  number   = {3},
+  pages    = {30--38},
+  month    = jun,
+  keywords = {functional},
+  owner    = {sam},
+}
+
+@Article{Hsueh2009,
+  author  = {Hsueh, Nien-Lin and Kuo, Jong-Yih and Lin, Ching-Chiuan},
+  title   = {{Object-oriented design: A goal-driven and pattern-based approach}},
+  journal = {Software System Model},
+  year    = {2009},
+  volume  = {8},
+  number  = {1},
+  pages   = {67-84},
+  month   = feb,
+}
+
+@Unpublished{Buysse2017-2018,
+  author    = {Buysse, Jens and De Weirdt, Harm},
+  title     = {{Native Apps 1: Android}},
+  note      = {Cursus uit het 3de jaar Toegepaste Informatica, specialisatie Mobile- en Webapplicatieontwikkeling, aan de Hogeschool Gent},
+  year      = {2017-2018},
+  timestamp = {2019-03-02},
+  url       = {https://github.com/HoGentTIN/software-development-in-Android},
+}
+
+@Article{McKenzie2001,
+  author  = {Nadine McKenzie},
+  title   = {{Is JavaScript an Object-Oriented Language?}},
+  journal = {Dr. Dobb's Journal: Software Tools for the Professional Programmer},
+  year    = {2001},
+  volume  = {26},
+  number  = {8},
+  pages   = {115},
+  month   = aug,
+  issn    = {1044-789X},
+  url     = {http://www.drdobbs.com/jvm/is-javascript-an-object-oriented-langua/184404736},
+}
+
+@Article{Hunt2016,
+  author  = {Hunt, Pete and O'Shannessy, Paul and Smith, Dave and Coatta, Terry},
+  title   = {{React: Facebook's Functional Turn on Writing JavaScript.}},
+  journal = {Communications of the ACM},
+  year    = {2016},
+  volume  = {59},
+  number  = {12},
+  pages   = {56-62},
+  month   = dec,
+  issn    = {0001-0782},
+}
+
+@Book{VanRoy2004,
+  title     = {{Concepts, Techniques, and Models of Computer Programming}},
+  publisher = {The MIT Press},
+  year      = {2004},
+  author    = {Van Roy, Peter and Haridi, Seif},
+}
+
+@Book{Bruce2002,
+  title     = {{Foundations of Object-oriented Languages: Types and Semantics}},
+  publisher = {The MIT Press},
+  year      = {2002},
+  author    = {Bruce, Kim B.},
+}
+
+@Electronic{OracleCorporation2019,
+  author       = {{Oracle Corporation}},
+  month        = apr,
+  year         = {2019},
+  title        = {{Providing Constructors for Your Classes}},
+  language     = {English},
+  organization = {Oracle Corporation},
+  url          = {https://docs.oracle.com/javase/tutorial/java/javaOO/constructors.html},
+}
+
+@Book{Aho1986,
+  title     = {{Compilers: Principles, Techniques and Tools}},
+  publisher = {Pearson Education, Inc.},
+  year      = {1986},
+  author    = {Aho, Alfred V. and Lam, Monica S. and Sethi Ravi and Ullman, Jeffrey D.},
+}
+
+@Book{Deitel2015,
+  title     = {{Java How to Program, Early Objects}},
+  publisher = {Pearson},
+  year      = {2015},
+  author    = {Deitel, Paul and Deitel, Harvey},
+}
+
+@Book{Riel1996,
+  title     = {{Object-Oriented Design Heuristics}},
+  publisher = {Addison-Wesley Professional},
+  year      = {1996},
+  author    = {Riel, Arthur J.},
+}
+
+@Book{Goetz2006,
+  title     = {{Java Concurrency in Practice}},
+  publisher = {Addison-Wesley Professional},
+  year      = {2006},
+  author    = {Goetz, Brian and Peierels, Tim and Bloch, Joshua and Bowbeer, Joseph and Holmes, David and Lea, Doug},
+}
+
+@Book{Church1941,
+  title     = {{The calculi of lambda conversion}},
+  publisher = {Princeton University Press},
+  year      = {1941},
+  author    = {Church, Alonzo},
+}
+
+@Electronic{Federale2019,
+  author       = {École Polytechnique Fédérale},
+  month        = apr,
+  year         = {2019},
+  title        = {{Higher-Order Functions}},
+  language     = {English},
+  organization = {École Polytechnique Fédérale},
+  url          = {https://docs.scala-lang.org/tour/higher-order-functions.html},
+}
+
+@Electronic{Microsoft2019,
+  author       = {Microsoft},
+  month        = apr,
+  year         = {2019},
+  title        = {{Dependency injection in ASP.NET Core}},
+  language     = {English},
+  organization = {Microsoft},
+  url          = {https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2},
+}
+
+@Book{Blaschek1994,
+  title     = {{Object-Oriented Programming With Prototypes}},
+  publisher = {Springer Verlag},
+  year      = {1994},
+  author    = {Blaschek, Gunther},
+}
+
+@Book{Atencio2016,
+  title     = {{Functional Programming in JavaScript}},
+  publisher = {Manning Publications},
+  year      = {2016},
+  author    = {Atencio, Luis},
+}
+
+@Electronic{,
+  author       = {Babel},
+  month        = apr,
+  year         = {2019},
+  title        = {{What is Babel?}},
+  language     = {English},
+  organization = {Babel},
+  url          = {https://babeljs.io/docs/en/},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
