@@ -164,7 +164,7 @@
   author    = {Atencio, Luis},
 }
 
-@Electronic{,
+@Electronic{Babel2019,
   author       = {Babel},
   month        = apr,
   year         = {2019},
@@ -172,6 +172,34 @@
   language     = {English},
   organization = {Babel},
   url          = {https://babeljs.io/docs/en/},
+}
+
+@Book{Booch2005,
+  title     = {{Unified Modeling Language User Guide, The}},
+  publisher = {Addison-Wesley Professional},
+  year      = {2005},
+  author    = {Booch, Grady and Rumbaugh, James and Jacobson, Ivar},
+}
+
+@Book{Gamma1994,
+  title     = {{Design Patterns: Elements of Reusable Object-Oriented Software}},
+  publisher = {Addison-Wesley Professional},
+  year      = {1994},
+  author    = {Gamma, Erich and Helm, Richard and Johnson, Ralph and Vlissides, John and Booch, Grady},
+}
+
+@Book{Brown2014,
+  title     = {{Web Development with Node and Express: Leveraging the JavaScript Stack}},
+  publisher = {O'Reilly Media},
+  year      = {2014},
+  author    = {Brown, Ethan},
+}
+
+@Book{Bertoli2017,
+  title     = {{React Design Patterns and Best Practices: Build easy to scale modular applications using the most powerful components and design patterns}},
+  publisher = {Packt Publishing},
+  year      = {2017},
+  author    = {Bertoli, Michele},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}

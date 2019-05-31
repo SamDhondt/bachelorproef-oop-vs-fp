@@ -25,16 +25,19 @@
 % Wie zijn bachelorproef in het Nederlands schrijft, kan dit negeren, de inhoud
 % wordt niet in het document ingevoegd.
 
-\IfLanguageName{english}{%
-\selectlanguage{dutch}
-\chapter*{Samenvatting}
-\lipsum[1-4]
-\selectlanguage{english}
-}{}
+% \IfLanguageName{english}{%
+% \selectlanguage{dutch}
+% \chapter*{Samenvatting}
+% \lipsum[1-4]
+% \selectlanguage{english}
+% }{}
 
 %%---------- Samenvatting -----------------------------------------------------
 % De samenvatting in de hoofdtaal van het document
 
 \chapter*{\IfLanguageName{dutch}{Samenvatting}{Abstract}}
+Dit werk vergelijkt het Object-Oriented programmeerparadigma (OOP) met dat van het Functioneel programmeren (FP). Een ontwikkelaar moet weten bij welk probleem de juiste tools horen om een oplossing te maken en een programmeerparadigma is één van deze tools. Dit werk toont dan ook eerder aan waar de sterktes en zwaktes van beide paradigma's liggen zonder een winnaar naar voren te schuiven, eerder een leidraad om in bepaalde gevallen te kunnen kiezen tussen OOP of FP. 
 
-\lipsum[1-4]
+Dit onderzoek bestond uit het ontwikkelen van twee frontend applicaties en twee backend applicaties, telkens in zowel een OOP als FP stijl. Het verloop van het ontwikkelen van deze applicaties staat in dit document neergeschreven, alsook de resultaten die zijn voortgekomen uit dit onderzoek. Dit resultaat toont aan dat de applicaties weinig verschillen qua performantie en complexiteit, zelfs op het vlak van aantal lijnen code is er weinig verschil. Bij het ontwikkelen van de applicaties was het wel duidelijk op frontend vlak dat het moeilijk was een FP stijl te blijven volgen door de dynamische user interface (UI). OOP lijkt eerder geschikt voor frontends doordat de klassen nauw verbonden zijn met de werkelijkheid die gebruikers terugvinden in de UI, het redeneren in objecten voelt natuurlijker aan. Functioneel programmeren blijft sterk in de manipulatie van data, zeker met lijsten, en is daarom sterk op backend vlak. Dit onderzoek probeerde echter zo puur mogelijk te blijven in beide applicaties, dus vermijden de OOP applicaties techniek uit FP en vice versa. 
+
+Frameworks zoals React en Angular en externe libraries die functioneel programmeren ondersteunen komen hier echter niet aan bod, maar dit onderzoek kan wel aanleiding geven tot het bestuderen van OOP en FP in bepaalde frameworks en met het gebruik van libraries zoals Lodash of Ramda alsook het gebruik van RxJS en Reactive programming binnen deze paradigma's.
